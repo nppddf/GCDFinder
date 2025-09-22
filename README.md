@@ -1,5 +1,5 @@
 ## GCDFinder
-Simple command-line Great Common Diviser (GCD) finder Euclide algorithm based.
+A simple command-line tool based on the Euclid algorithm for finding the greatest common divisor (GCD).
 Includes unit tests and a Makefile for easy compilation and execution.
 
 ## Compiling and running

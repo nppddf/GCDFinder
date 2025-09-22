@@ -1,0 +1,5 @@
+/bin/obj/*.o
+/bin/run/*.exe
+/bin/tests/*.exe
+*.exe
+*.o
