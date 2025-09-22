@@ -12,9 +12,11 @@ OBJ_FILES = $(patsubst $(PREF_SRC)%.c,$(PREF_OBJ)%.o,$(SRC_FILES))
 all : $(TARGET)
 
 $(TARGET) : $(OBJ_FILES)
+	@mkdir -p ./bin/run
 	$(CC) $(CFLAGS) $(OBJ_FILES) -o $(TARGET) -lm
 
 $(PREF_OBJ)%.o : $(PREF_SRC)%.c
+	@mkdir -p $(PREF_OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 TEST_TARGET = $(PREF_TEST)tests.exe
