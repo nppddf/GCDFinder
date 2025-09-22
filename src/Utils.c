@@ -1,6 +1,6 @@
 #include "Utils.h"
 
-int isZero(int number) {
+int isZero(long long number) {
     if (number == 0) {
         return numberIsZero;
     }

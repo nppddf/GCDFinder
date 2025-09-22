@@ -6,6 +6,6 @@ enum isZeroResultCodes {
     numberIsZero = 1
 };
 
-int isZero(int);
+int isZero(long long);
 
 #endif // UTILS_H

@@ -40,7 +40,3 @@ void printRecommendationsToUser(int correctInputTypes, int bothAreNotZero) {
         printf("Please, make sure that numbers are not equal to zero at the same time: ");
     }
 }
-
-void checkForZero(long long a, long long b) {
-    assert(!(a == 0 && b == 0) && "Incorrect iterable writing.");
-}

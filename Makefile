@@ -4,6 +4,7 @@ CFLAGS = -I./inc -Wall -Wextra
 
 PREF_SRC = ./src/
 PREF_OBJ = ./bin/obj/
+PREF_TEST = ./bin/tests/
 
 SRC_FILES = $(wildcard $(PREF_SRC)*.c)
 OBJ_FILES = $(patsubst $(PREF_SRC)%.c,$(PREF_OBJ)%.o,$(SRC_FILES))
@@ -16,6 +17,13 @@ $(TARGET) : $(OBJ_FILES)
 $(PREF_OBJ)%.o : $(PREF_SRC)%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
+TEST_TARGET = $(PREF_TEST)tests.exe
+TEST = $(PREF_TEST)tests.c
+
+test : $(TEST_TARGET)
+
+$(TEST_TARGET) : $(TEST) $(filter-out $(PREF_OBJ)main.o,$(OBJ_FILES))
+	$(CC) $(CFLAGS) -o $@ $^
+
 clean:
-	-rm -f $(TARGET)
-	-rm -f $(PREF_OBJ)*.o
+	-rm -f $(TARGET) $(PREF_OBJ)*.o $(PREF_TEST)*.exe

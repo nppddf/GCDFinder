@@ -7,7 +7,6 @@ int main() {
     long long a = 0, b = 0;
 
     setNumbers(&a, &b); 
-    checkForZero(a, b);
 
     long long gcd = calculateGCD(a, b);
     printf("The grand common divisor of %lld and %lld is %lld\n", a, b, gcd);

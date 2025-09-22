@@ -6,8 +6,10 @@
 #include "Utils.h"
 
 long long calculateGCD(long long a, long long b) {    
+    a = llabs(a), b = llabs(b);
+
     if (a == 0 || b == 0) {
-        return fmax((double) llabs(a), (double) llabs(b));
+        return (a > b ? a : b);
     }
 
     if (a < b) {
