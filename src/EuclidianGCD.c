@@ -1,0 +1,29 @@
+/*Euclid GCD algorithm explanation :  https://en.wikipedia.org/wiki/Greatest_common_divisor */
+
+#include <stdlib.h>
+#include <math.h>
+#include "EuclidianGCD.h"
+#include "Utils.h"
+
+long long calculateGCD(long long a, long long b) {    
+    if (a == 0 || b == 0) {
+        return fmax((double) llabs(a), (double) llabs(b));
+    }
+
+    if (a < b) {
+        swap(&a, &b);
+    }
+
+    while (b > 0) {
+        a %= b;
+        swap(&a, &b);
+    }
+
+    return a;
+}
+
+void swap(long long* a, long long* b) {
+    long long temp = *a;
+    *a = *b;
+    *b = temp;
+}
