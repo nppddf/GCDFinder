@@ -3,17 +3,11 @@ A simple command-line tool based on the Euclid algorithm for finding the greates
 Includes unit tests and a Makefile for easy compilation and execution.
 
 ## Compiling and running
-    To compile the exetable, run 'make' in '\GCDFinder'
-    To run the main.exe, run './bin/run/main.exe' in '\GCDFinder'
-
-    To compile the tests, run 'make test' in '\GCDFinder'
-    To run the tests, run './bin/tests/tests.exe' in '\GCDFinder'
-
-    To clean project from .o and .exe files run 'make clean' in '\GCDFinder'
+    run ./build.sh
 
 ## Tree of project
     .
-    ├── Makefile
+    ├── CMakeLists.txt
     ├── README.md
     ├── bin
     │   ├── obj
@@ -26,15 +20,43 @@ Includes unit tests and a Makefile for easy compilation and execution.
     │   └── tests
     │       ├── tests.c
     │       └── tests.exe
-    ├── inc
+    ├── build
+    │   ├── CMakeCache.txt
+    │   ├── CMakeFiles
+    │   │   ├── 3.28.3
+    │   │   │   ├── CMakeCCompiler.cmake
+    │   │   │   ├── CMakeCXXCompiler.cmake
+    │   │   │   ├── CMakeDetermineCompilerABI_C.bin
+    │   │   │   ├── CMakeDetermineCompilerABI_CXX.bin
+    │   │   │   ├── CMakeSystem.cmake
+    │   │   │   ├── CompilerIdC
+    │   │   │   │   ├── CMakeCCompilerId.c
+    │   │   │   │   ├── a.out
+    │   │   │   │   └── tmp
+    │   │   │   └── CompilerIdCXX
+    │   │   │       ├── CMakeCXXCompilerId.cpp
+    │   │   │       ├── a.out
+    │   │   │       └── tmp
+    │   │   ├── CMakeConfigureLog.yaml
+    │   │   ├── GCDFinder.dir
+    │   │   │   └── src
+    │   │   │       ├── EuclidianGCD.c.o
+    │   │   │       ├── InputReader.c.o
+    │   │   │       └── main.c.o
+    │   │   ├── TargetDirectories.txt
+    │   │   ├── cmake.check_cache
+    │   │   ├── pkgRedirects
+    │   │   └── rules.ninja
+    │   ├── GCDFinder
+    │   ├── build.ninja
+    │   └── cmake_install.cmake
+    ├── build.sh
+    ├── include
     │   ├── EuclidianGCD.h
-    │   ├── InputReader.h
-    │   └── Utils.h
+    │   └── InputReader.h
     └── src
         ├── EuclidianGCD.c
         ├── InputReader.c
-        ├── Utils.c
         └── main.c
 
-    7 directories, 16 files
-
+    17 directories, 35 files
