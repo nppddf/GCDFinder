@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <math.h>
 #include "EuclidianGCD.h"
-#include "Utils.h"
 
 long long calculateGCD(long long a, long long b) {    
     a = llabs(a), b = llabs(b);

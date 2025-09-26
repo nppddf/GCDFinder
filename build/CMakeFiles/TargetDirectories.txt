@@ -1,0 +1,3 @@
+/mnt/c/Users/user/.vscode/workspace/A&AL_Seminars/GCDFinder/build/CMakeFiles/GCDFinder.dir
+/mnt/c/Users/user/.vscode/workspace/A&AL_Seminars/GCDFinder/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/user/.vscode/workspace/A&AL_Seminars/GCDFinder/build/CMakeFiles/rebuild_cache.dir

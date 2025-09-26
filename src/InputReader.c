@@ -2,7 +2,6 @@
 #include <assert.h>
 #include <math.h>
 #include "InputReader.h"
-#include "Utils.h"
 
 void setNumbers(long long* a, long long* b) {
     printf("Enter two integer numbers: ");
